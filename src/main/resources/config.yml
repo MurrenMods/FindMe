@@ -1,0 +1,10 @@
+# Configuration for the FindMe plugin by Murren.
+
+# Toggles if /find should be enabled.
+find: true
+
+# Toggles if /hideme should be enabled.
+hide: true
+
+# Toggles if /findentity should be enabled.
+entityfind: true

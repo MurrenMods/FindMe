@@ -1,0 +1,39 @@
+name: FindMe
+version: '${project.version}'
+main: me.murren.findme.FindMe
+api-version: '1.19'
+
+commands:
+  find:
+    description: Find a player
+    usage: /<command> <player>
+    permission: findme.find
+    aliases: [find, f]
+  findentity:
+    description: Find all entities of a type
+    usage: /<command> <entitytype>
+    permission: findme.findentity
+    aliases: [findentity, fe]
+  hideme:
+    description: Hide yourself from the find command
+    usage: /<command>
+    permission: findme.hide
+    aliases: [hideme, hm]
+
+permissions:
+  findme.*:
+    description: All permissions. Do not use this for normal players!
+    default: op
+    children:
+      findme.find: true
+      findme.findentity: true
+      findme.hide: true
+  findme.find:
+    description: Allows the player to find other players
+    default: true
+  findme.findentity:
+    description: Allows the player to find entities
+    default: true
+  findme.hide:
+    description: Allows the player to hide from the find command
+    default: true
