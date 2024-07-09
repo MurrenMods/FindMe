@@ -18,6 +18,7 @@ Retrieves the world and location of all loaded entities of that type, and the to
 - entityfind: Toggles if /findentity should be enabled.
 
 ## Permissions
+- findme.*: All permissions. Do not use for normal players!
 - findme.find: Allow player to use /find (default on)
 - findme.hide: Allow player to use /hideme (default on)
 - findme.findentity: Allow player to use /findentity (default on)
